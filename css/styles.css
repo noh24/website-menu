@@ -10,6 +10,8 @@ body {
 }
 #menu-items {
   margin-left: clamp(4rem, 20vw, 48rem);
+  position: relative;
+  z-index: 2;
 }
 #menu-items:hover > .menu-items {
   opacity: 0.3;
@@ -43,7 +45,7 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: -1;
+  z-index: 1;
 
   transition: opacity 800ms ease,
     background-size 800ms;
@@ -51,4 +53,16 @@ body {
 #menu-items:hover ~ #menu-background-pattern {
   background-size: 11vmin 11vmin;
   opacity: 0.5;
+}
+#menu[data-active-index="0"] > #menu-background-pattern {
+  background-position: 0% -25%;
+}
+#menu[data-active-index="1"] > #menu-background-pattern {
+  background-position: 0% -50%;
+}
+#menu[data-active-index="2"] > #menu-background-pattern {
+  background-position: 0% -75%;
+}
+#menu[data-active-index="3"] > #menu-background-pattern {
+  background-position: 0% -100%;
 }
