@@ -1,7 +1,7 @@
 # Cool Website Menu
 By Brian Noh
 Making a cool website menu
-[Check out this YouTube video](https://www.youtube.com/watch?v=NUeCNvYY_x4&ab_channel=Hyperplexed)
+[All credit goes to YouTube video](https://www.youtube.com/watch?v=NUeCNvYY_x4&ab_channel=Hyperplexed)
 
 ## Technologies Used  
 * HTML
